@@ -2,48 +2,139 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Art Galary</title>
+		<title>Art Gallery</title>
 
-        <!-- Link to bootstrap here -->
-
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	</head>
 
 
-    <!-- Style the below elements using bootstrap
-        remember to make your site responsive at different viewport sizes
-        You must add:
-            a navbar
-            cards (one for each section)
-            an offcanvas component 
-        
-        If you are curious about how these work, remember to refer to the bootstrap documentation! -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<div class="container-fluid">
+		    <a class="navbar-brand" href="#">Mimi's Gallery</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNav">
+		      <ul class="navbar-nav">
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="#">Cars</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Flowers</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Birds</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+</nav>
 	<body>
-
-		<header><h1>Beauty of Life Art Galary</h1></header>
+		<div class="jumbotron">
+  <h1 class="display-4">Beauty of Life Art Gallery</h1>
+  <p class="lead">Your one-stop-shop for cars, birds, and flowers.</p>
+  <hr class="my-4">
+  <a class="btn btn-primary btn-lg" href="#" role="button">Explore</a>
+</div>
 
 			<main>
 
 				<section><h2>Old School Car</h2></section>
-				<img src="https://images.unsplash.com/photo-1532751203793-812308a10d8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b2xkJTIwY2Fyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
-                <img src="https://images.unsplash.com/photo-1563831816793-3d32d7cc07d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2xkJTIwY2Fyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
-                <img src="https://images.unsplash.com/photo-1593544340816-93d84a106415?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1195&q=80">
-                <img src="https://images.unsplash.com/photo-1581281664725-7d97d24d48b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8b2xkJTIwY2Fyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+			<div class="card-group">
+				<div class="card">
+    <img src="https://images.unsplash.com/photo-1532751203793-812308a10d8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b2xkJTIwY2Fyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Old School Car</h5>
+      <p class="card-text">Classic style!</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1563831816793-3d32d7cc07d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2xkJTIwY2Fyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Old School Car</h5>
+      <p class="card-text">Does this fit your style?</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1593544340816-93d84a106415?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1195&q=80" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Old School Car</h5>
+      <p class="card-text">Maybe you like this!</p>
+    </div>
+  </div>
+	<div class="card">
+    <img src="https://images.unsplash.com/photo-1581281664725-7d97d24d48b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8b2xkJTIwY2Fyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Old School Car</h5>
+      <p class="card-text">Can you get with this?</p>
+    </div>
+  </div>
+</div>
 
 
 				<section><h2>Rare Flowers</h2></section>
-				<img src="https://images.unsplash.com/photo-1528857901852-ba9ffa60559c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZXhvdGljJTIwZmxvd2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
-                <img src="https://images.unsplash.com/photo-1508128655192-0270cf7f0a11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZXhvdGljJTIwZmxvd2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
-                <img src="https://images.unsplash.com/photo-1527017895487-3ac53c0f03fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZXhvdGljJTIwZmxvd2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+
+				<div class="card-group">
+					<div class="card">
+			<img src="https://images.unsplash.com/photo-1528857901852-ba9ffa60559c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZXhvdGljJTIwZmxvd2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Rare Flowers</h5>
+				<p class="card-text">Beauty you can feel.</p>
+			</div>
+		</div>
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1508128655192-0270cf7f0a11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZXhvdGljJTIwZmxvd2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Rare Flowers</h5>
+				<p class="card-text">Fragrant and lovely.</p>
+			</div>
+		</div>
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1527017895487-3ac53c0f03fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZXhvdGljJTIwZmxvd2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Rare Flowersr</h5>
+				<p class="card-text">Bright and inviting.</p>
+			</div>
+		</div>
+	</div>
+
 
 
 				<section><h2>Exotic Birds</h2></section>
-				<img src="https://images.unsplash.com/photo-1534765372525-6c48a6524046?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZXhvdGljJTIwYmlyZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
-                <img src="https://images.unsplash.com/photo-1534631717226-c4f264e50e1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXhvdGljJTIwYmlyZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
-                <img src="https://images.unsplash.com/photo-1526401415661-5a755bef0246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZXhvdGljJTIwYmlyZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
-                <img src="https://images.unsplash.com/photo-1527919964707-ad5dd075c527?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGV4b3RpYyUyMGJpcmRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+				<div class="card-group">
+					<div class="card">
+	    <img src="https://images.unsplash.com/photo-1534765372525-6c48a6524046?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZXhvdGljJTIwYmlyZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+	    <div class="card-body">
+	      <h5 class="card-title">Parrot</h5>
+	      <p class="card-text">What a chatterbox!</p>
+	    </div>
+	  </div>
+	  <div class="card">
+	    <img src="https://images.unsplash.com/photo-1534631717226-c4f264e50e1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXhvdGljJTIwYmlyZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+	    <div class="card-body">
+	      <h5 class="card-title">Exotic Birds</h5>
+	      <p class="card-text">Can you guess what type of bird this is?</p>
+	    </div>
+	  </div>
+	  <div class="card">
+	    <img src="https://images.unsplash.com/photo-1526401415661-5a755bef0246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZXhvdGljJTIwYmlyZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+	    <div class="card-body">
+	      <h5 class="card-title">Flamingo</h5>
+	      <p class="card-text">A tropical favorite.</p>
+	    </div>
+	  </div>
+		<div class="card">
+	    <img src="https://images.unsplash.com/photo-1527919964707-ad5dd075c527?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGV4b3RpYyUyMGJpcmRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+	    <div class="card-body">
+	      <h5 class="card-title">Peacock</h5>
+	      <p class="card-text">Show off.</p>
+	    </div>
+	  </div>
+	</div>
 
 
-					<table>
+
+					<table class="table">
 						<h3>Admission Prices</h3>
     					<thead>
     						<tr>
@@ -77,7 +168,7 @@
 
 
 
-			</main>		
+			</main>
 
 	</body>
 
